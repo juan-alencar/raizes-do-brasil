@@ -4,13 +4,14 @@ import { FC } from "react";
 import { twMerge } from "tailwind-merge";
 
 import LoginImage from "@/assets/login-image.jpg";
+import RaizesDoBrasil from "@/assets/raizes-do-brasil.svg";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import * as Checkbox from "@radix-ui/react-checkbox";
 import { ArrowRight, CheckIcon, LogInIcon } from "lucide-react";
-import RaizesDoBrasil from "../../../public/raizes-do-brasil.svg";
 
 import { DM_Serif_Text } from "next/font/google";
+import Link from "next/link";
 const font = DM_Serif_Text({ subsets: ["latin", "latin-ext"], weight: "400" });
 
 interface LoginProps {}
@@ -75,13 +76,13 @@ const Login: FC<LoginProps> = () => {
 
         <span className='text-sm text-gray-400'>
           Desenvolvido por{" "}
-          <a
+          <Link
             className='hover:underline hover:text-primary transition'
             href='https://brgweb.com.br/'
             target='_blank'
           >
             BRGWeb
-          </a>
+          </Link>
         </span>
       </section>
     </main>

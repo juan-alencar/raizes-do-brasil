@@ -8,14 +8,23 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      // shadcn colors
+      // default colors
       "muted-foreground": "#B0AA98",
+
+      background: "#fff",
+
       primary: "#009B3A",
       "primary-foreground": "#EDFFF3",
+
       accent: "#E7E5E0",
-      "accent-foreground": "#201F18",
+      "accent-foreground": "#4B483A",
+
+      secondary: "#F8F7F5",
+      "secondary-foreground": "#4B483A",
+      "secondary-hover": "#D6FFE5",
 
       // colors
+      white: "#FFFFFF",
       "gray-50": "#F8F7F5",
       "gray-100": "#E7E5E0",
       "gray-200": "#CFCAC0",
